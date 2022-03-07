@@ -26,7 +26,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px 50px 15px 162px;
+    padding: 15px 162px 15px 162px;
     margin: 0;
 
     -webkit-box-shadow: 0 4px 6px -6px #222;
@@ -59,5 +59,24 @@ export default {
 #nav #menu{
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 892px)
+{
+  #nav
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+   }
+   #nav #logo-url{
+    margin: auto;
+    /* margin-left: 0; */
+    }
+    #nav a p{
+    padding-right: 30px;
+    border-right: 3px solid #00D96F;
+}
 }
 </style>
