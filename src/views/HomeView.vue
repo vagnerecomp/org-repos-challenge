@@ -1,17 +1,17 @@
 <template>
   <div class="main-container">
-    <h1>Iniciozão</h1>
+    <ReposFinder/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import ReposFinder from "../components/ReposFinder.vue"
 
 export default {
   name: 'HomeView',
   components: {
-    
+    ReposFinder
   }
 }
 </script>
+
