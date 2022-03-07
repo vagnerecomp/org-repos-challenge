@@ -11,7 +11,7 @@ import Footer from "./components/Footer.vue";
 export default {
   data () {
     return {
-      logo_src: "/img/logo.png",
+      logo_src: "https://www.lett.digital/core/assets/4f45a5e11f/img/logo.png",
       app_name: "Lett"
     }
   },
