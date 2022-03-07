@@ -1,7 +1,7 @@
 <template>
     <div id="repos-table">
-        <label for="org-name">Buscar Empresa: </label> <br>
-        <input type="search" placeholder="Ex: google" v-model="orgName">
+        <label for="org-name-input">Buscar Empresa: </label> <br>
+        <input type="search" placeholder="Ex: google" v-model="orgName" id="org-name-input">
     </div>
    
 </template>
