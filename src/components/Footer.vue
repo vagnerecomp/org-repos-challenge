@@ -12,8 +12,9 @@ export default {
 
 <style scoped>
     #footer{
-        position: absolute;
+        position: relative;
         bottom: 0;
+        left: 0;
         height: 100px;
         background-color: #00D96F;
         border-top: 4px solid #111;

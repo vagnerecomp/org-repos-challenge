@@ -1,7 +1,10 @@
 <template>
-  <Navbar :logo="logo_src" :alt="app_name" />
-  <router-view/>
-  <Footer />
+  <div id="main">
+    <Navbar :logo="logo_src" :alt="app_name" />
+    <router-view/>
+    <Footer />
+
+  </div>
 </template>
 
 <script>
@@ -29,9 +32,17 @@ export default {
     margin: 0;
     box-sizing: border-box;
   }
+  /* #main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  } */
   .main-container{
     margin: 50px;
     min-height: 350px;
+    
   }
   h1{
     text-align: center;
