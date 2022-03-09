@@ -1,5 +1,6 @@
 # org-repos-challenge
 
+Projeto resultante do desafio da Lett Digital para
 ## Project setup
 ```
 npm install
