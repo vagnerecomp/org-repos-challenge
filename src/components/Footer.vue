@@ -22,5 +22,6 @@ export default {
         justify-content: center;
         width: 100%;
         bottom: 0;
+        left: 0;
     }
 </style>
