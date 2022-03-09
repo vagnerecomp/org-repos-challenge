@@ -15,17 +15,17 @@
 
     <div id="repos-table">
         <div>
-            <div v-if="notFound">
-                Ainda não temos repositórios dessa empresa
+            <div v-if="notFound && notFoundMessage !== '' " id="not-found-message">
+                <Message :msg="notFoundMessage"/>
             </div>
             <div else>
                 
-                <div id="repos-table-heading" v-if="orgPublicRepos != null">
+                <div id="repos-table-heading" v-if="orgPublicRepos != null && notFound === false">
                     <div class="order-id">ID:</div>
                     <div>Repositório:</div>
                 
                 </div>
-                <div id="repos-table-rows">
+                <div id="repos-table-rows" v-if="notFound === false">
                     <div class="repos-table-row" v-for="repo in orgPublicRepos" :key="repo.id">
                         <div class="order-number"> {{ repo.id }}</div>
                         <div>{{ repo.name }}</div>
@@ -51,7 +51,8 @@ export default {
         return{
             orgName: '',
             orgPublicRepos: null,
-            notFound: false 
+            notFound: false,
+            notFoundMessage: 'Ainda não temos repositórios dessa empresa' 
 
         }
     },
@@ -65,8 +66,10 @@ export default {
             this.orgPublicRepos = data;
             this.notFound = this.orgPublicRepos.message === "Not Found";
             console.log(this.orgPublicRepos.message)
+            setTimeout(()=>this.notFoundMessage = '', 3000)
         }
-    }
+    },
+   
 }
 </script>
 
@@ -146,7 +149,11 @@ ul{
         border-bottom: 3px solid #00D96F;
         color: #00D96F;
         padding-bottom: 20px;
+       
     }
+    /* #not-found-message{
+        
+    } */
     #repos-table-heading div,
     .repos-table-row div{
         width: 30%;
@@ -157,6 +164,8 @@ ul{
         padding: 12px;
         border-bottom: 1px solid #ccc;
         margin: auto;
+        justify-content: flex-end;
+        padding-right: 40px;
     }
     #repos-table-heading .order-id,
     .repos-table-row .order-number{
@@ -179,4 +188,27 @@ ul{
         background-color: transparent;
         color: #222;
     }
+
+@media (max-width: 600px)
+{
+    #repos-table-heading{
+        display: flex;
+        justify-content: flex-start;
+    }
+   .repos-table-row{
+        
+       display:flex;
+       flex-wrap: wrap;
+       padding-right: 12px;
+       justify-content: space-between;
+        
+    }
+    .repos-table-row div:nth-child(1) {
+        margin-right: 20px;
+    }
+    #access-btn{
+        width: 90px;
+        height: 60px;
+    }
+}
 </style>

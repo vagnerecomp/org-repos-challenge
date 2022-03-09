@@ -1,5 +1,5 @@
 <template>
-    <div class="message-container">
+    <div class="message-container" :v-show="msg">
         <p>{{msg}}</p>    
     </div>    
 </template>
@@ -7,9 +7,8 @@
 <script>
 export default {
     name: 'Message',
-    props: {
-        msg: String 
-    }
+    props: ["msg"]
+
 }
 </script>
 
