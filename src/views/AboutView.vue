@@ -23,6 +23,7 @@
   align-items: center;
   max-width: 600px;
   margin: auto;
+  padding-top: 100px;
   }
 #picture{
   width: 300px;

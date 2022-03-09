@@ -29,7 +29,7 @@ export default {
     background-color: #FFF;
     padding: 15px 162px 15px 162px;
     margin: 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;

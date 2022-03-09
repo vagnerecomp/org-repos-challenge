@@ -80,7 +80,7 @@ export default {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-    padding-top: 100px;
+    padding-top: 20pxpx;
 }
 #input-main-container label{
     font-weight: bold;
