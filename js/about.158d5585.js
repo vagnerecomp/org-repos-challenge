@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkorg_repos_challenge"]=self["webpackChunkorg_repos_challenge"]||[]).push([[443],{590:function(n,e,r){r.r(e),r.d(e,{default:function(){return h}});var a=r(252);const s={class:"main-container"},c=(0,a._)("h1",null,"This is an about page",-1),t=[c];function u(n,e){return(0,a.wg)(),(0,a.iD)("div",s,t)}var o=r(744);const i={},l=(0,o.Z)(i,[["render",u]]);var h=l}}]);
-//# sourceMappingURL=about.158d5585.js.map
