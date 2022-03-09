@@ -80,6 +80,7 @@ export default {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    padding-top: 100px;
 }
 #input-main-container label{
     font-weight: bold;
@@ -210,5 +211,6 @@ ul{
         width: 90px;
         height: 60px;
     }
+   
 }
 </style>

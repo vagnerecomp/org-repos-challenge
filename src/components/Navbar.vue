@@ -26,8 +26,13 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #FFF;
     padding: 15px 162px 15px 162px;
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
